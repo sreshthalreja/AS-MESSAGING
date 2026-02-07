@@ -8,8 +8,8 @@
   Token is kept in memory only and never stored in localStorage.
 */
 
-const REPO_OWNER = "YOUR_GITHUB_USERNAME";
-const REPO_NAME = "YOUR_REPO_NAME";
+const REPO_OWNER = "sreshthalreja";
+const REPO_NAME = "AS-MESSAGING";
 const REPO_BRANCH = "main";
 
 const adminForm = document.getElementById("adminForm");
