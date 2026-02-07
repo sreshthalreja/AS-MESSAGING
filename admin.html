@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Letters</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="admin-body">
+  <main class="admin">
+    <header class="app-header">
+      <h1>Admin Upload</h1>
+      <p>Upload a new message to the private journal.</p>
+    </header>
+
+    <form id="adminForm" class="admin-form">
+      <label>
+        GitHub Personal Access Token
+        <input type="password" id="token" placeholder="ghp_..." required />
+      </label>
+
+      <label>
+        Title
+        <input type="text" id="title" maxlength="80" required />
+      </label>
+
+      <label>
+        Event Name (optional)
+        <input type="text" id="eventName" maxlength="80" />
+      </label>
+
+      <label>
+        Message
+        <textarea id="message" rows="6" required></textarea>
+      </label>
+
+      <label>
+        Image
+        <input type="file" id="image" accept="image/*" required />
+      </label>
+
+      <button type="submit" class="btn-primary">Upload Message</button>
+    </form>
+
+    <div id="adminStatus" class="admin-status" role="status"></div>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
